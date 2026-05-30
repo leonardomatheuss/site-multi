@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Stop-Process -Id \\(Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -First 1\\) -Force -ErrorAction SilentlyContinue; Start-Sleep -Milliseconds 500; Write-Host \"Processo encerrado\")"
+    ]
+  }
+}
